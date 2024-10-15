@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="overflow-hidden">
+    <div class="w-full h-screen grid grid-cols-1 lg:grid-cols-2">
+        <div class="bg-sky-300  w-[300px] h-screen fixed right-0 hidden md:block">
+            <div class="flex flex-col justify-center items-center w-4/5  m-auto h-full">
+                <ul>
+                    <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                    <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                    <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                    <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                </ul>
+            </div>
+        </div>
+        <div class=" col-span-2">
+            <div class="w-full py-4 md:hidden bg-slate-500">
+                <i class="bi bi-list text-white text-4xl cursor-pointer ms-10 hover:text-gray-400" id="menu"></i>
+                <div class="  items-center w-4/5  m-auto h-full ">
+                    <ul class="hidden transition tran" id="dropdown-menu">
+                        <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                        <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                        <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                        <li class="p-4 my-10 font-bold text-3xl hover:text-white cursor-pointer">item</li>
+                    </ul>
+                </div></div>
+            <div class="hidden w-[calc(100%-300px)] bg-gray-200 shadow-lg fixed h-16 md:flex items-center justify-between rounded-b-md">
+                <i class="bi bi-person-circle text-4xl ms-10"></i> 
+                <h6 class="text-3xl me-10 font-bold">userPanel</h6>      
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4  md:mt-[65px] p-5 w-full md:w-[calc(100%-300px)] gap-5 overflow-auto h-[830px]" id="card-parent">
+                <div class="flex flex-col col-span-1 bg-stone-200 p-4 rounded-md h-[510px]  hover:bg-stone-300 hover:scale-105 cursor-pointer">
+                    <img src="https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI" alt="" class="w-full rounded-md h-1/2">
+                    <div class="mt-3 w-full flex justify-center flex-col text-2xl items-center p-4 h-1/2">
+                        <h2 class="text-3xl font-bold">title</h2>
+                        <p class="my-2 text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, asperiores!</p>
+                        <button class="bg-blue-500 p-4 rounded-md w-full hover:bg-blue-700 text-white">click</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
+    <script src="./script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "scripts": {
+    "build":"npx tailwindcss -i ./input.css -o ./style.css --watch"
+  }
+}
